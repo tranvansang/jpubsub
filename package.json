@@ -1,0 +1,22 @@
+{
+  "name": "jpubsub",
+  "version": "0.0.1",
+  "description": "Simple PubSub",
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "require": "./index.cjs",
+      "import": "./index.mjs"
+    }
+  },
+  "files": [
+    "index.cjs",
+    "index.d.cts",
+    "index.mjs",
+    "index.d.mts"
+  ],
+  "repository": "https://github.com/tranvansang/jpubsub",
+  "author": "Sang Tran <t@sang.jp>",
+  "license": "MIT",
+  "private": false
+}
