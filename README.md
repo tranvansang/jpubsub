@@ -12,7 +12,7 @@ npm install -S jpubsub
 import makePublisher from 'jpubsub'
 import type {Subscriber} from 'jpubsub' // generic type Subscriber<T>
 // or
-const pubsub = require('jpubsub')
+const makePublisher = require('jpubsub')
 
 // define a subscriber
 const subscriber: Subscriber<string> = (data) => {
