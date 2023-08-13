@@ -15,7 +15,7 @@ export default function makePublisher<T>(): Publisher<T> {
 			// if callback is subscribed multiple times, it will be fired multiple times
 			// when removed, only last instance will be removed
 			subscribers.push(subscriber)
-			return () => {
+			return function unsubscribe(this: void) {
 				const idx = subscribers.lastIndexOf(subscriber)
 				if (idx >= 0) subscribers.splice(idx, 1)
 			}
