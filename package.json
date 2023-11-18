@@ -1,6 +1,6 @@
 {
   "name": "jpubsub",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Simple PubSub",
   "main": "index.cjs",
   "exports": {
