@@ -21,8 +21,10 @@ export default function makePublisher<T>(): Publisher<T> {
 			}
 		},
 		publish(payload: T) {
-			// if a subscriber has error, the following subscribers will not be called
-			for (const subscriber of subscribers) subscriber(payload)
+			for (const subscriber of subscribers) try {
+				subscriber(payload)
+			} catch {
+			}
 		}
 	}
 }
